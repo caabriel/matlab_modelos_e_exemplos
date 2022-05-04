@@ -1,18 +1,18 @@
 function[fx,ea,iter] = mclaurin_serie(x,es,maxit)
-# Serie de Maclaurin da funcao exponencial
-#entrada:
-#         x - valor avaliadp
-#         es - criterio de parada(0.0001)
-#         maxit - maximo de iteracoes(50)
-#saida:
-#         fx = valor estimado
-#         er = erro relativo(%)
-#         iter = numero de iteracoes
-#
-#** nargin() - Relate o número de argumentos de entrada para uma função.
-#   isempity() - Retorna true se a for uma matriz vazia (qualquer uma de suas dimensões for zero).
-# !!!!coloque >format long
-#inicializacao de padroes:
+% Serie de Maclaurin da funcao exponencial
+%entrada:
+%         x - valor avaliadp
+%         es - criterio de parada(0.0001)
+%         maxit - maximo de iteracoes(50)
+%saida:
+%         fx = valor estimado
+%         er = erro relativo(%)
+%         iter = numero de iteracoes
+%
+%** nargin() - Relate o número de argumentos de entrada para uma função.
+%   isempity() - Retorna true se a for uma matriz vazia (qualquer uma de suas dimensões for zero).
+% !!!!coloque >format long
+%inicializacao de padroes:
 if nargin<2|isempty(es), es=0.0001;end
 if nargin<3|isempty(maxit), maxit = 50;end
 
